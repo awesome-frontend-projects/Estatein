@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  /* purple shades */
+  --color-purple-60: #ff7a00;
+  --color-purple-65: #1a64ff;
+  --color-purple-70: #ff9533;
+  --color-purple-75: #ffca99;
+  --color-purple-90: #ffe4cc;
+  --color-purple-95: #fff1e5;
+  --color-purple-97: #fff7f0;
+  --color-purple-99: #fffcfa;
+  /* White shades */
+  --color-white-90: #e4e4e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
+  /* Grey shades */
+  --color-grey-08: #141414;
+  --color-grey-10: #1a1a1a;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+  --color-grey-30: #4d4d4d;
+  --color-grey-40: #666666;
+  --color-grey-50: #808080;
+  --color-grey-60: #999999;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-grey-08 text-grey-60;
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1130px] 2xl:max-w-[1340px];
+  }
+  p {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+  .section {
+    @apply pt-20 md:pt-[100px] lg:mt-32;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold leading-tight text-balance;
+  }
+  h2 {
+    @apply text-3xl font-semibold leading-tight text-balance;
+  }
+  h4 {
+    @apply text-xl font-semibold text-white;
+  }
+}
+
+@layer components {
+  .primary-btn {
+    @apply bg-grey-08 px-6 py-3 border border-grey-20 rounded-md inline-block;
+  }
+  .secondary-btn {
+    @apply bg-purple-600 text-white px-6 py-3 inline-block rounded-md hover:bg-purple-600/85 transition-colors;
+  }
+}
+
+/* Header */
+.navbar {
+  @apply lg:hidden fixed top-0 left-0 h-screen w-full bg-grey-10/85 flex flex-col items-center justify-center backdrop-blur-xs -translate-y-full transition-transform duration-300 ease-in-out z-40;
+}
+
+.navbar.active {
+  @apply translate-y-0;
+}
+
+.text-shape {
+  animation: rotate linear infinite 15s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
