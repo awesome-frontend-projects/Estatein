@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NextTopLoader from "nextjs-toploader";
 
 const uranist = Urbanist({
   subsets: ["latin"],
@@ -22,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={uranist.className}>
       <body>
+        <NextTopLoader color="#9810fa" />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
