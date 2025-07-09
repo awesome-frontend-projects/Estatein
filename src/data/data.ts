@@ -448,3 +448,127 @@ export const teamsItems = [
     role: "Legal Counsel",
   },
 ];
+
+export const ourClientsItems = [
+  {
+    id: 1,
+    time: "Since 2019",
+    company: "ABC Corporation",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Commercial Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Luxury Home Development",
+      },
+    ],
+
+    reason: "What They Said 🤗",
+    text: "Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
+  },
+  {
+    id: 2,
+    time: "Since 2018",
+    company: "GreenTech Enterprises",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Commercial Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Retail Space",
+      },
+    ],
+
+    reason: "What They Said 🤗",
+    text: "Estatein's ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.",
+  },
+  {
+    id: 3,
+    time: "Since 2020",
+    company: "UrbanRise Holdings",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Residential Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "High-Rise Apartments",
+      },
+    ],
+    reason: "What They Said 🤗",
+    text: "Estatein guided us through every stage of our high-rise development project. Their knowledge and responsiveness made a complex process smooth and efficient.",
+  },
+  {
+    id: 4,
+    time: "Since 2021",
+    company: "TechNest Solutions",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Commercial Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Innovation Hubs",
+      },
+    ],
+    reason: "What They Said 🤗",
+    text: "The Estatein team helped us secure a tech park space that matched our vision perfectly. Their strategic insights were a game-changer.",
+  },
+  {
+    id: 5,
+    time: "Since 2017",
+    company: "Luxora Group",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Luxury Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Private Villas",
+      },
+    ],
+    reason: "What They Said 🤗",
+    text: "Estatein brought our dream villa concept to life by finding the ideal location and supporting us through negotiations. They go above and beyond.",
+  },
+  {
+    id: 6,
+    time: "Since 2016",
+    company: "EcoLife Ventures",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Sustainable Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Eco-Friendly Communities",
+      },
+    ],
+    reason: "What They Said 🤗",
+    text: "Their commitment to sustainable development aligned perfectly with our mission. Estatein is more than a service provider—they’re a sustainability partner.",
+  },
+  {
+    id: 7,
+    time: "Since 2022",
+    company: "MetroMall Developers",
+    box: [
+      {
+        subtitle: "Domain",
+        title: "Retail Real Estate",
+      },
+      {
+        subtitle: "Category",
+        title: "Shopping Malls",
+      },
+    ],
+    reason: "What They Said 🤗",
+    text: "From scouting the right plot to finalizing contracts, Estatein made sure we launched our mall on time and within budget. A seamless experience!",
+  },
+];

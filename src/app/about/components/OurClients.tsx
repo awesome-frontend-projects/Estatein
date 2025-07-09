@@ -1,11 +1,23 @@
 "use client";
 import Title from "@/components/Title";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "@remixicon/react";
+import {
+  RiArrowLeftSLine,
+  RiArrowRightSLine,
+  RiBox3Fill,
+} from "@remixicon/react";
 import React from "react";
 
 //motion
 import { motion } from "motion/react";
 import * as variants from "@/motion/animation";
+import { ourClientsItems } from "@/data/data";
+import Button from "@/components/Button";
+
+//import swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import { Navigation } from "swiper/modules";
 
 export default function OurClients() {
   return (
@@ -24,7 +36,68 @@ export default function OurClients() {
         />
 
         {/* Card wrapper */}
-        <div className=""></div>
+        <Swiper
+          className="mt-10 lg:mt-14"
+          modules={[Navigation]}
+          spaceBetween={30}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1.5,
+            },
+            1024: {
+              slidesPerView: 2.5,
+            },
+          }}
+          navigation={{
+            prevEl: ".prev-btn",
+            nextEl: ".next-btn",
+          }}
+        >
+          {ourClientsItems.map((item) => (
+            // Card
+            <SwiperSlide key={item.id}>
+              <motion.div
+                variants={variants.fadeInUp}
+                className="border border-grey-15 p-5 rounded-lg"
+              >
+                {/* Title */}
+                <div className="flex items-center gap-6 justify-between flex-wrap">
+                  <div className="">
+                    <p>{item.time}</p>
+                    <h4>{item.company}</h4>
+                  </div>
+                  <Button label="Visit Website" classes="primary-btn" />
+                </div>
+
+                {/* wrapper */}
+                <div className="flex justify-between flex-wrap gap-3 items-center my-7">
+                  {item.box.map((item, index) => (
+                    <div key={index}>
+                      <div className="flex items-center gap-3">
+                        <p>
+                          <RiBox3Fill />
+                        </p>
+                        <p>{item.subtitle}</p>
+                      </div>
+                      <h5 className="text-lg font-semibold text-white mt-1.5">
+                        {item.title}
+                      </h5>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Description */}
+                <div className="border border-grey-15 rounded-lg p-3">
+                  <p>{item.reason}</p>
+                  <p className="mt-2.5">{item.text}</p>
+                </div>
+              </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
         {/* Navigation btns */}
         <motion.div
           variants={variants.fadeIn}
