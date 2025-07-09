@@ -65,7 +65,7 @@ export default function Footer() {
         {/* footer bottom */}
         <motion.div
           variants={fadeIn}
-          className="flex justify-between items-center pt-6 pb-12 border-t border-grey-20"
+          className="flex flex-wrap justify-between items-center pt-6 pb-12 border-t border-grey-20"
         >
           <div className="">
             <p>
