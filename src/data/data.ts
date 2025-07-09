@@ -333,3 +333,118 @@ export const socialIcons = [
     icon: RiYoutubeFill,
   },
 ];
+
+// *********************
+//      About page
+// *********************
+
+export const valuesItems = [
+  {
+    id: 1,
+    icon: "/images/icon-5.svg",
+    title: "Trust",
+    text: "Trust is the cornerstone of every successful real estate transaction.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon-6.svg",
+    title: "Excellence",
+    text: "We set the bar high for ourselves. From the properties we list to the services we provide.",
+  },
+  {
+    id: 3,
+    icon: "/images/icon-7.svg",
+    title: "Client-Centric",
+    text: "Your dreams and needs are at the center of our universe. We listen, understand.",
+  },
+  {
+    id: 4,
+    icon: "/images/icon-5.svg",
+    title: "Our Commitment",
+    text: "We are dedicated to providing you with the highest level of service, professionalism",
+  },
+];
+
+export const achievementItems = [
+  {
+    id: 1,
+    title: "3+ Years of Excellence",
+    text: "With over 3 years in the industry, we've amassed a wealth of knowledge and experience.",
+  },
+  {
+    id: 2,
+    title: "Happy Clients",
+    text: "Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.",
+  },
+  {
+    id: 3,
+    title: "Industry Recognition",
+    text: "We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.",
+  },
+];
+
+export const howItWorksItems = [
+  {
+    id: 1,
+    step: "Step 01",
+    title: "Discover a World of Possibilities",
+    text: "Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location,",
+  },
+  {
+    id: 2,
+    step: "Step 02",
+    title: "Narrowing Down Your Choices",
+    text: "Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.",
+  },
+  {
+    id: 3,
+    step: "Step 03",
+    title: "Personalized Guidance",
+    text: "Have questions about a property or need more information? Our dedicated team of real estate experts is just a call or message away.",
+  },
+  {
+    id: 4,
+    step: "Step 04",
+    title: "See It for Yourself",
+    text: "Arrange viewings of the properties you're interested in. We'll coordinate with the property owners and accompany you to ensure you get a firsthand look at your potential new home.",
+  },
+  {
+    id: 5,
+    step: "Step 05",
+    title: "Making Informed Decisions",
+    text: "Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, including location,",
+  },
+  {
+    id: 6,
+    step: "Step 06",
+    title: "Getting the Best Deal",
+    text: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms.",
+  },
+];
+
+export const teamsItems = [
+  {
+    id: 1,
+    img: "/images/team-1.png",
+    name: "Max Mitchell",
+    role: "Founder",
+  },
+  {
+    id: 2,
+    img: "/images/team-2.png",
+    name: "Sarah Johnson",
+    role: "Chief Real Estate Officer",
+  },
+  {
+    id: 3,
+    img: "/images/team-3.png",
+    name: "David Brown",
+    role: "Head of Property Management",
+  },
+  {
+    id: 4,
+    img: "/images/team-4.png",
+    name: "Michael Turner",
+    role: "Legal Counsel",
+  },
+];

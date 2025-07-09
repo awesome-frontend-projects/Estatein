@@ -57,7 +57,7 @@ export default function Header() {
 
           {/* Button */}
           <Link
-            href={"#"}
+            href={"/contact"}
             className="primary-btn block mt-10"
             onClick={handleClick}
           >
@@ -91,7 +91,7 @@ export default function Header() {
         </button>
 
         {/* Button */}
-        <Link href={"#"} className="primary-btn max-lg:hidden">
+        <Link href={"/contact"} className="primary-btn max-lg:hidden">
           Contact Us
         </Link>
       </div>

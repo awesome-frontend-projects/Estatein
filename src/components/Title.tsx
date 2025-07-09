@@ -10,7 +10,7 @@ import { fadeInUp } from "@/motion/animation";
 interface titleProps {
   title: string;
   text: string;
-  link: string;
+  link?: string;
 }
 
 export default function Title({ title, text, link }: titleProps) {
@@ -28,10 +28,13 @@ export default function Title({ title, text, link }: titleProps) {
         <h2>{title}</h2>
         <p className="mt-3 max-w-[730px]">{text}</p>
       </motion.div>
+
       <motion.div variants={fadeInUp}>
-        <Link href="#" className="primary-btn">
-          {link}
-        </Link>
+        {link && (
+          <Link href="#" className="primary-btn">
+            {link}
+          </Link>
+        )}
       </motion.div>
     </div>
   );
