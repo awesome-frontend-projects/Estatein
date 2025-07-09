@@ -1,3 +1,10 @@
+import {
+  RiFacebookFill,
+  RiLinkedinFill,
+  RiTwitterFill,
+  RiYoutubeFill,
+} from "@remixicon/react";
+
 export const navItems = [
   {
     id: 1,
@@ -188,5 +195,141 @@ export const featureItems = [
       },
     ],
     price: 495000,
+  },
+];
+
+export const testimonialsItems = [
+  {
+    id: 1,
+    title: "Exceptional Service!",
+    text: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+    name: "Wade Warren",
+    residential: "USA, California",
+  },
+  {
+    id: 2,
+    title: "Efficient and Reliable",
+    text: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+    name: "Emelie Thomson",
+    residential: "USA, Florida",
+  },
+  {
+    id: 3,
+    title: "Trusted Advisors",
+    text: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+    name: "John Mans",
+    residential: "USA, Nevada",
+  },
+  {
+    id: 4,
+    title: "Exceptional Service!",
+    text: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+    name: "Wade Warren",
+    residential: "USA, California",
+  },
+];
+
+export const footerItems = [
+  {
+    id: 1,
+    title: "Home",
+    links: [
+      {
+        label: "Hero Section",
+      },
+      {
+        label: "Features",
+      },
+      {
+        label: "Properties",
+      },
+      {
+        label: "Testimonials",
+      },
+      {
+        label: "FAQ’s",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "About Us",
+    links: [
+      {
+        label: "Our Story",
+      },
+      {
+        label: "Our Works",
+      },
+      {
+        label: "How It Works",
+      },
+      {
+        label: "Our Team",
+      },
+      {
+        label: "Our Clients",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Properties",
+    links: [
+      {
+        label: "Portfolio",
+      },
+      {
+        label: "Categories",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Services",
+    links: [
+      {
+        label: "Valuation Mastery",
+      },
+      {
+        label: "Strategic Marketing",
+      },
+      {
+        label: "Negotiation Wizardry",
+      },
+      {
+        label: "Closing Success",
+      },
+      {
+        label: "Property Management",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Contact Us",
+    links: [
+      {
+        label: "Contact Form",
+      },
+      {
+        label: "Our Offices",
+      },
+    ],
+  },
+];
+
+export const socialIcons = [
+  {
+    icon: RiFacebookFill,
+  },
+  {
+    icon: RiLinkedinFill,
+  },
+  {
+    icon: RiTwitterFill,
+  },
+  {
+    icon: RiYoutubeFill,
   },
 ];
