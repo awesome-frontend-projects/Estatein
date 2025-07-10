@@ -93,7 +93,7 @@ export default function Feature() {
                     ))}
                   </div>
                   {/* Price */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between flex-wrap gap-6">
                     <p className="font-semibold grid gap-1">
                       Price{" "}
                       <span className="text-white text-lg">${item.price}</span>

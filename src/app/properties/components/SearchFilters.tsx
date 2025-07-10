@@ -150,9 +150,8 @@ export default function SearchFilters() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <button className="secondary-btn flex items-center gap-2 shrink-0">
+          <button className="secondary-btn p-3 md:px-5 md:py-2.5 shrink-0">
             <RiSearchLine size={25} />
-            Find Property
           </button>
         </motion.div>
 

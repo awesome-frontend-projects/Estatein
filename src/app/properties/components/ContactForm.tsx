@@ -35,85 +35,98 @@ export default function ContactForm() {
         {/* form */}
         <motion.form
           variants={fadeIn}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6  mt-8 md:mt-12 border border-grey-15 rounded-[12px] p-5 lg:p-10"
+          className="border border-grey-15 rounded-[12px] p-5 lg:p-10  mt-8 md:mt-12"
         >
-          {formItems.map((group) => (
-            <React.Fragment key={group.id}>
-              {/* Map Inputs */}
-              {group.inputs?.map((input) => (
-                <div className="flex flex-col gap-2" key={input.id}>
-                  <label
-                    htmlFor={`input-${input.id}`}
-                    className="font-semibold"
-                  >
-                    {input.label}
-                  </label>
-                  <Input
-                    id={`input-${input.id}`}
-                    type={input.type}
-                    placeholder={input.placeholder}
-                    className="h-[52px] w-full !rounded-[6px] "
-                  />
-                </div>
-              ))}
-
-              {/* Map Selects */}
-              {group.selects?.map((select) => (
-                <div
-                  className={`flex flex-col gap-2 ${
-                    select.label === "Budget" ? "!lg:col-span-2" : ""
-                  }`}
-                  key={select.id}
-                >
-                  <label
-                    htmlFor={`select-${select.id}`}
-                    className="font-semibold"
-                  >
-                    {select.label}
-                  </label>
-                  <Select>
-                    <SelectTrigger
-                      id={`select-${select.id}`}
-                      className="w-full !h-[52px] !rounded-[6px]"
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            {formItems.map((group) => (
+              <React.Fragment key={group.id}>
+                {/* Map Inputs */}
+                {group.inputs?.map((input) => (
+                  <div className="flex flex-col gap-2" key={input.id}>
+                    <label
+                      htmlFor={`input-${input.id}`}
+                      className="font-semibold"
                     >
-                      <SelectValue placeholder={select.placeholder} />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {select.options.map((option, i) => (
-                        <SelectItem key={i} value={option}>
-                          {option}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-              ))}
-            </React.Fragment>
-          ))}
+                      {input.label}
+                    </label>
+                    <Input
+                      id={`input-${input.id}`}
+                      type={input.type}
+                      placeholder={input.placeholder}
+                      className="h-[52px] w-full !rounded-[6px] "
+                    />
+                  </div>
+                ))}
 
-          {/* opation */}
-          <div className="lg:col-span-2 flex flex-col gap-2">
-            <label htmlFor="">Preferred Contact Method</label>
-            <div className="flex gap-6">
-              <Input
-                type="email"
-                placeholder="Enter Your Email"
-                className="h-[52px] w-full !rounded-[6px]"
-              />
-              <Input
-                type="number"
-                placeholder="Enter Your Number"
-                className="h-[52px] w-full !rounded-[6px]"
+                {/* Map Selects */}
+                {group.selects?.map((select) => (
+                  <div
+                    className={`flex flex-col gap-2 ${
+                      select.label === "Budget" ? "!lg:col-span-2" : ""
+                    }`}
+                    key={select.id}
+                  >
+                    <label
+                      htmlFor={`select-${select.id}`}
+                      className="font-semibold"
+                    >
+                      {select.label}
+                    </label>
+                    <Select>
+                      <SelectTrigger
+                        id={`select-${select.id}`}
+                        className="w-full !h-[52px] !rounded-[6px]"
+                      >
+                        <SelectValue placeholder={select.placeholder} />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {select.options.map((option, i) => (
+                          <SelectItem key={i} value={option}>
+                            {option}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                ))}
+              </React.Fragment>
+            ))}
+
+            {/* opation */}
+            <div className="lg:col-span-2 flex flex-col gap-2">
+              <label htmlFor="">Preferred Contact Method</label>
+              <div className="flex gap-6">
+                <Input
+                  type="email"
+                  placeholder="Enter Your Email"
+                  className="h-[52px] w-full !rounded-[6px]"
+                />
+                <Input
+                  type="number"
+                  placeholder="Enter Your Number"
+                  className="h-[52px] w-full !rounded-[6px]"
+                />
+              </div>
+            </div>
+            {/* Text area */}
+            <div className="lg:col-span-4 md:col-span-2 flex flex-col gap-2">
+              <label htmlFor="textarea">Message</label>
+              <Textarea
+                placeholder="Enter your Message here.."
+                className="h-[150px] resize-none"
               />
             </div>
           </div>
-          {/* Text area */}
-          <div className="lg:col-span-4 flex flex-col gap-2">
-            <label htmlFor="textarea">Message</label>
-            <Textarea
-              placeholder="Enter your Message here.."
-              className="h-[150px] resize-none"
-            />
+
+          {/* Submit form */}
+          <div className="flex items-center justify-between mt-8 lg:mt-12 flex-wrap gap-5">
+            <div className="flex gap-1.5 ">
+              <input type="checkbox" id="checkbox" />
+              <label htmlFor="checkbox">
+                I agree with Terms of Use and Privacy Policy
+              </label>
+            </div>
+            <button className="secondary-btn">Send Your Message</button>
           </div>
         </motion.form>
       </motion.div>
