@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={uranist.className}>
-      <body>
+      <body className="dark">
         <NextTopLoader showSpinner={false} color="#9810fa" />
         <Header />
         <main className="min-h-screen">{children}</main>

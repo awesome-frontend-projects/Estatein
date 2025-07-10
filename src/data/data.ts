@@ -3,8 +3,19 @@ import {
   RiLinkedinFill,
   RiTwitterFill,
   RiYoutubeFill,
+  RiHomeLine,
+  RiMoneyDollarCircleLine,
+  RiRuler2Line,
+  RiCalendar2Line,
+  RiMapPinLine,
 } from "@remixicon/react";
-
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@/components/ui/select";
 export const navItems = [
   {
     id: 1,
@@ -570,5 +581,195 @@ export const ourClientsItems = [
     ],
     reason: "What They Said 🤗",
     text: "From scouting the right plot to finalizing contracts, Estatein made sure we launched our mall on time and within budget. A seamless experience!",
+  },
+];
+
+// ************************
+//       Properties Page
+// ************************
+
+// export const filterItems = [
+//   {
+//     id: 1,
+//     icon: RiMapPinLine,
+//     label: "Location",
+//     options: ["New York", "Los Angeles", "Chicago", "Houston", "Miami"],
+//   },
+//   {
+//     id: 2,
+//     icon: RiHomeLine,
+//     label: "Property Type",
+//     options: ["Apartment", "Villa", "Office", "Warehouse"],
+//   },
+//   {
+//     id: 3,
+//     icon: RiMoneyDollarCircleLine,
+//     label: "Pricing Range",
+//     options: ["$0 - $100k", "$100k - $300k", "$300k+"],
+//   },
+//   {
+//     id: 4,
+//     icon: RiRuler2Line,
+//     label: "Property Size",
+//     options: ["< 1000 sqft", "1000 - 2000 sqft", "> 2000 sqft"],
+//   },
+//   {
+//     id: 5,
+//     icon: RiCalendar2Line,
+//     label: "Build Year",
+//     options: ["2020+", "2010 - 2019", "Before 2010"],
+//   },
+// ];
+
+export const propertiesItems = [
+  {
+    id: 1,
+    img: "/images/prop-2.png",
+    title: "New York Villa #1",
+    text: "A beautiful 1-bedroom, 2-bathroom villa in New York.",
+    location: "New York",
+    type: "Villa",
+    year: 2006,
+    price: 545614,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "1-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "2-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Villa" },
+    ],
+  },
+  {
+    id: 2,
+    img: "/images/prop-3.png",
+    title: "Chicago House #2",
+    text: "A beautiful 5-bedroom, 4-bathroom house in Chicago.",
+    location: "Chicago",
+    type: "House",
+    year: 2005,
+    price: 867726,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "5-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "4-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "House" },
+    ],
+  },
+  {
+    id: 3,
+    img: "/images/prop-4.png",
+    title: "Houston Apartment #3",
+    text: "A beautiful 2-bedroom, 2-bathroom apartment in Houston.",
+    location: "Houston",
+    type: "Apartment",
+    year: 2008,
+    price: 486676,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "2-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "2-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Apartment" },
+    ],
+  },
+  {
+    id: 4,
+    img: "/images/prop-5.png",
+    title: "Houston House #4",
+    text: "A beautiful 4-bedroom, 1-bathroom house in Houston.",
+    location: "Houston",
+    type: "House",
+    year: 2020,
+    price: 349347,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "4-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "1-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "House" },
+    ],
+  },
+  {
+    id: 5,
+    img: "/images/prop-6.png",
+    title: "New York Apartment #5",
+    text: "A beautiful 5-bedroom, 1-bathroom apartment in New York.",
+    location: "New York",
+    type: "Apartment",
+    year: 2017,
+    price: 780967,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "5-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "1-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Apartment" },
+    ],
+  },
+  {
+    id: 6,
+    img: "/images/prop-1.png",
+    title: "Los Angeles House #6",
+    text: "A beautiful 4-bedroom, 4-bathroom house in Los Angeles.",
+    location: "Los Angeles",
+    type: "House",
+    year: 2014,
+    price: 712420,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "4-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "4-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "House" },
+    ],
+  },
+  {
+    id: 7,
+    img: "/images/prop-2.png",
+    title: "Miami Apartment #7",
+    text: "A beautiful 1-bedroom, 2-bathroom apartment in Miami.",
+    location: "Miami",
+    type: "Apartment",
+    year: 2007,
+    price: 628782,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "1-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "2-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Apartment" },
+    ],
+  },
+  {
+    id: 8,
+    img: "/images/prop-3.png",
+    title: "Houston Apartment #8",
+    text: "A beautiful 5-bedroom, 4-bathroom apartment in Houston.",
+    location: "Houston",
+    type: "Apartment",
+    year: 2010,
+    price: 382881,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "5-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "4-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Apartment" },
+    ],
+  },
+  {
+    id: 9,
+    img: "/images/prop-4.png",
+    title: "Miami Villa #9",
+    text: "A beautiful 5-bedroom, 1-bathroom villa in Miami.",
+    location: "Miami",
+    type: "Villa",
+    year: 2009,
+    price: 757213,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "5-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "1-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Villa" },
+    ],
+  },
+  {
+    id: 10,
+    img: "/images/prop-5.png",
+    title: "Los Angeles Villa #10",
+    text: "A beautiful 1-bedroom, 2-bathroom villa in Los Angeles.",
+    location: "Los Angeles",
+    type: "Villa",
+    year: 2011,
+    price: 859229,
+    icons: [
+      { icon: "/images/prop-icon-1.svg", label: "1-Bedroom" },
+      { icon: "/images/prop-icon-2.svg", label: "2-Bathroom" },
+      { icon: "/images/prop-icon-3.svg", label: "Villa" },
+    ],
   },
 ];
