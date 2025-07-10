@@ -18,6 +18,10 @@ import {
 } from "@/components/ui/select";
 import { propertiesItems } from "@/data/data";
 
+//motion
+import { motion } from "motion/react";
+import { fadeIn, fadeInUp, staggerContainer } from "@/motion/animation";
+
 // Properties data type
 type PropertyIcon = {
   icon: string;
@@ -127,9 +131,18 @@ export default function SearchFilters() {
 
   return (
     <section>
-      <div className="container">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="container"
+      >
         {/* Search field */}
-        <div className="max-w-[1100px] h-[81px] bg-grey-08 border border-grey-15 rounded-lg w-full flex items-center justify-between px-5 py-4 justify-self-center">
+        <motion.div
+          variants={fadeIn}
+          className="max-w-[1100px] h-[81px] bg-grey-08 border border-grey-15 rounded-lg w-full flex items-center justify-between px-5 py-4 justify-self-center"
+        >
           <input
             type="search"
             placeholder="Search For A Property"
@@ -141,10 +154,13 @@ export default function SearchFilters() {
             <RiSearchLine size={25} />
             Find Property
           </button>
-        </div>
+        </motion.div>
 
         {/* Filter wrapper */}
-        <div className="flex justify-center flex-wrap gap-5 mt-10">
+        <motion.div
+          variants={fadeIn}
+          className="flex justify-center flex-wrap gap-5 mt-10"
+        >
           {filterItems.map((item) => {
             const Icon = item.icon;
             return (
@@ -157,7 +173,7 @@ export default function SearchFilters() {
                     handleFilterChange(item.field, value)
                   }
                 >
-                  <SelectTrigger className="w-[200px]">
+                  <SelectTrigger className="!w-[200px] !h-[52px] !rounded-[6px]">
                     <SelectValue placeholder={`Select ${item.label}`} />
                   </SelectTrigger>
                   <SelectContent>
@@ -171,13 +187,14 @@ export default function SearchFilters() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Card wrapper */}
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3 mt-20">
           {filteredProperties.length > 0 ? (
             filteredProperties.map((item) => (
-              <div
+              <motion.div
+                variants={fadeInUp}
                 className="border border-grey-15 p-6 rounded-xl"
                 key={item.id}
               >
@@ -216,7 +233,7 @@ export default function SearchFilters() {
                   </div>
 
                   {/* Price */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between flex-wrap gap-2.5">
                     <p className="font-semibold grid gap-1">
                       Price{" "}
                       <span className="text-white text-lg">${item.price}</span>
@@ -226,7 +243,7 @@ export default function SearchFilters() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))
           ) : (
             <p className="col-span-full mt-10 text-center text-gray-500">
@@ -234,7 +251,7 @@ export default function SearchFilters() {
             </p>
           )}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

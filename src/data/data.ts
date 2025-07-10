@@ -588,39 +588,6 @@ export const ourClientsItems = [
 //       Properties Page
 // ************************
 
-// export const filterItems = [
-//   {
-//     id: 1,
-//     icon: RiMapPinLine,
-//     label: "Location",
-//     options: ["New York", "Los Angeles", "Chicago", "Houston", "Miami"],
-//   },
-//   {
-//     id: 2,
-//     icon: RiHomeLine,
-//     label: "Property Type",
-//     options: ["Apartment", "Villa", "Office", "Warehouse"],
-//   },
-//   {
-//     id: 3,
-//     icon: RiMoneyDollarCircleLine,
-//     label: "Pricing Range",
-//     options: ["$0 - $100k", "$100k - $300k", "$300k+"],
-//   },
-//   {
-//     id: 4,
-//     icon: RiRuler2Line,
-//     label: "Property Size",
-//     options: ["< 1000 sqft", "1000 - 2000 sqft", "> 2000 sqft"],
-//   },
-//   {
-//     id: 5,
-//     icon: RiCalendar2Line,
-//     label: "Build Year",
-//     options: ["2020+", "2010 - 2019", "Before 2010"],
-//   },
-// ];
-
 export const propertiesItems = [
   {
     id: 1,
@@ -770,6 +737,72 @@ export const propertiesItems = [
       { icon: "/images/prop-icon-1.svg", label: "1-Bedroom" },
       { icon: "/images/prop-icon-2.svg", label: "2-Bathroom" },
       { icon: "/images/prop-icon-3.svg", label: "Villa" },
+    ],
+  },
+];
+export const formItems = [
+  {
+    id: 1,
+    inputs: [
+      {
+        id: 1,
+        label: "First Name",
+        type: "text",
+        placeholder: "Enter First Name",
+      },
+      {
+        id: 2,
+        label: "Last Name",
+        type: "text",
+        placeholder: "Enter Last Name",
+      },
+      {
+        id: 3,
+        label: "Email",
+        type: "email",
+        placeholder: "Enter your Email",
+      },
+      {
+        id: 4,
+        label: "Phone",
+        type: "number",
+        placeholder: "Enter Phone Number",
+      },
+    ],
+  },
+  {
+    id: 2,
+    selects: [
+      {
+        id: 1,
+        label: "Preferred Location",
+        placeholder: "Select Location",
+        options: ["New York", "Chicago", "Los Angeles", "Miami"],
+      },
+      {
+        id: 2,
+        label: "Property Type",
+        placeholder: "Select Property Type",
+        options: ["Villa", "Apartment", "House", "Loft", "Cabin"],
+      },
+      {
+        id: 3,
+        label: "No. of Bathrooms",
+        placeholder: "Select number of Bathrooms",
+        options: ["1", "2", "3", "4", "5"],
+      },
+      {
+        id: 4,
+        label: "No. of Bedrooms",
+        placeholder: "Select number of Bedrooms",
+        options: ["1", "2", "3", "4", "5", "6"],
+      },
+      {
+        id: 5,
+        label: "Budget",
+        placeholder: "Select Budget",
+        options: ["< 400000", "400000 - 600000", "> 600000"],
+      },
     ],
   },
 ];
