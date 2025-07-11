@@ -135,7 +135,6 @@ export default function SearchFilters() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
         className="container"
       >
         {/* Search field */}
@@ -189,11 +188,13 @@ export default function SearchFilters() {
         </motion.div>
 
         {/* Card wrapper */}
-        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3 mt-20">
+        <motion.div
+          variants={fadeInUp}
+          className="grid gap-10 md:grid-cols-2 xl:grid-cols-3 mt-20"
+        >
           {filteredProperties.length > 0 ? (
             filteredProperties.map((item) => (
-              <motion.div
-                variants={fadeInUp}
+              <div
                 className="border border-grey-15 p-6 rounded-xl"
                 key={item.id}
               >
@@ -242,14 +243,14 @@ export default function SearchFilters() {
                     </button>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))
           ) : (
             <p className="col-span-full mt-10 text-center text-gray-500">
               No properties found matching your criteria.
             </p>
           )}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
