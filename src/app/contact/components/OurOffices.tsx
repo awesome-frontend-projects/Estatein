@@ -22,7 +22,7 @@ interface TabPanelItem {
 
 export default function OurOffices() {
   return (
-    <section>
+    <section className="section">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

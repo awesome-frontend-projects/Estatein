@@ -887,6 +887,28 @@ export const investmentFeaturesItems = [
 //      Contact page
 // ***********************
 
+export const contactInfoItems = [
+  {
+    id: 1,
+    icon: "/images/icon-16.svg",
+    label: "info@estatein.com",
+  },
+  {
+    id: 2,
+    icon: "/images/icon-17.svg",
+    label: "+1 (123) 456-7890",
+  },
+  {
+    id: 3,
+    icon: "/images/icon-18.svg",
+    label: "Main Headquarters",
+  },
+  {
+    id: 4,
+    icon: "/images/icon-19.svg",
+    label: "Instagram LinkedIn Facebook",
+  },
+];
 export const contactFormItems = [
   {
     id: 1,

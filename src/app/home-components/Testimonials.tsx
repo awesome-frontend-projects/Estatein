@@ -88,7 +88,7 @@ export default function Testimonials() {
                 {/* Card content */}
                 <div className="my-4">
                   <h4>{item.title}</h4>
-                  <p>{item.text}</p>
+                  <p className="text-base">{item.text}</p>
                 </div>
                 {/* author info */}
                 <div className="">
