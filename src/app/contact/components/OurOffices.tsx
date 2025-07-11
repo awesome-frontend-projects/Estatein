@@ -27,7 +27,6 @@ export default function OurOffices() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
         className="container"
       >
         {/* Title */}
