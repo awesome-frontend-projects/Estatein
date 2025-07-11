@@ -1,5 +1,4 @@
 "use client";
-import { CardsItems } from "@/data/data";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import React from "react";
