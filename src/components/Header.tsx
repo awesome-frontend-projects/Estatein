@@ -91,7 +91,12 @@ export default function Header() {
         </button>
 
         {/* Button */}
-        <Link href={"/contact"} className="primary-btn max-lg:hidden">
+        <Link
+          href={"/contact"}
+          className={`primary-btn max-lg:hidden ${
+            pathname === "/contact" ? "secondary-btn" : ""
+          }`}
+        >
           Contact Us
         </Link>
       </div>

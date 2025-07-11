@@ -226,7 +226,7 @@ export default function SearchFilters() {
                             height={20}
                           />
                         </span>
-                        <p>{iconItem.label}</p>
+                        <p className="text-sm">{iconItem.label}</p>
                       </div>
                     ))}
                   </div>

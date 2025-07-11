@@ -88,7 +88,7 @@ export default function Feature() {
                             height={20}
                           />
                         </span>
-                        <p>{item.label}</p>
+                        <p className="text-sm">{item.label}</p>
                       </div>
                     ))}
                   </div>

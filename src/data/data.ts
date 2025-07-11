@@ -996,3 +996,24 @@ export const ourOfficeItems = [
     ],
   },
 ];
+
+export const galleryItems = [
+  {
+    id: 1,
+    img: "/images/img-1.png",
+    width: 570,
+    height: 192,
+  },
+  {
+    id: 2,
+    img: "/images/img-2.png",
+    width: 570,
+    height: 192,
+  },
+  {
+    id: 3,
+    img: "/images/img-3.png",
+    width: 570,
+    height: 192,
+  },
+];

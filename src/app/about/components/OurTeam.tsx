@@ -55,7 +55,7 @@ export default function OurTeam() {
 
               {/* btn */}
               <button className="flex items-center justify-between border-grey-15 rounded-[50px] border px-3 py-2.5">
-                <p>Say Hello 👋</p>
+                <p className="text-sm">Say Hello 👋</p>
                 <span className="bg-purple-600 w-12 h-12 text-white rounded-full flex items-center justify-center aspect-square hover:bg-purple-800 transition-colors">
                   <RiSendPlaneFill size={26} />
                 </span>

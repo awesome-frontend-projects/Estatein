@@ -90,9 +90,9 @@ export default function OurClients() {
                 </div>
 
                 {/* Description */}
-                <div className="border border-grey-15 rounded-lg p-3">
+                <div className="border border-grey-15 space-y-2 rounded-lg p-3">
                   <p>{item.reason}</p>
-                  <p className="mt-2.5">{item.text}</p>
+                  <p className="text-sm">{item.text}</p>
                 </div>
               </motion.div>
             </SwiperSlide>
