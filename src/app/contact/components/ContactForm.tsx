@@ -17,6 +17,9 @@ import { fadeIn, staggerContainer } from "@/motion/animation";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
   return (
     <section className="section">
       <motion.div
@@ -34,6 +37,7 @@ export default function ContactForm() {
 
         {/* form */}
         <motion.form
+          onSubmit={handleFormSubmit}
           variants={fadeIn}
           className="border border-grey-15 rounded-[12px] p-5 lg:p-10  mt-8 md:mt-12"
         >

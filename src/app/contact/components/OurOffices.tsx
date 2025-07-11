@@ -36,7 +36,7 @@ export default function OurOffices() {
         />
 
         {/* Tabs */}
-        <div>
+        <motion.div variants={fadeIn}>
           {ourOfficeItems.map((item) => (
             <Tabs key={item.id}>
               <TabList
@@ -75,8 +75,7 @@ export default function OurOffices() {
                   <TabPanel key={index}>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {filteredPanels.map((panel) => (
-                        <motion.div
-                          variants={fadeIn}
+                        <div
                           key={panel.id}
                           className="border border-grey-15 p-5 lg:p-8 rounded-lg grid gap-4 lg:gap-7"
                         >
@@ -97,12 +96,10 @@ export default function OurOffices() {
                               </p>
                             ))}
                           </div>
-
-                          <Button
-                            label="Get Direction"
-                            classes="secondary-btn text-center"
-                          />
-                        </motion.div>
+                          <button className="secondary-btn">
+                            Get Direction
+                          </button>
+                        </div>
                       ))}
                     </div>
                   </TabPanel>
@@ -110,7 +107,7 @@ export default function OurOffices() {
               })}
             </Tabs>
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );
