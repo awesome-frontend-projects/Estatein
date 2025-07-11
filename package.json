@@ -1,5 +1,5 @@
 {
-  "name": "digital-agency-website",
+  "name": "Estatein-realestate-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "nextjs-toploader": "^3.8.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-tabs": "^6.1.0",
     "swiper": "^11.2.10",
     "tailwind-merge": "^3.3.1"
   },

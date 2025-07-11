@@ -3,19 +3,10 @@ import {
   RiLinkedinFill,
   RiTwitterFill,
   RiYoutubeFill,
-  RiHomeLine,
-  RiMoneyDollarCircleLine,
-  RiRuler2Line,
-  RiCalendar2Line,
-  RiMapPinLine,
+  RiMailLine,
+  RiMapFill,
+  RiPhoneFill,
 } from "@remixicon/react";
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
 export const navItems = [
   {
     id: 1,
@@ -57,7 +48,7 @@ export const heroStats = [
   },
 ];
 
-export const heroBottomItems = [
+export const CardsItems = [
   {
     id: 1,
     icon: "/images/icon-1.svg",
@@ -349,7 +340,7 @@ export const socialIcons = [
 //      About page
 // *********************
 
-export const valuesItems = [
+export const aboutValues = [
   {
     id: 1,
     icon: "/images/icon-5.svg",
@@ -802,6 +793,205 @@ export const formItems = [
         label: "Budget",
         placeholder: "Select Budget",
         options: ["< 400000", "400000 - 600000", "> 600000"],
+      },
+    ],
+  },
+];
+
+// ************************
+//       Services Page
+// ************************
+
+export const valuesItems = [
+  {
+    id: 1,
+    icon: "/images/icon-8.svg",
+    title: "Valuation Mastery",
+    text: "Discover the true worth of your property with our expert valuation services.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon-9.svg",
+    title: "Strategic Marketing",
+    text: "Selling a property requires more than just a listing; it demands a strategic marketing.",
+  },
+  {
+    id: 3,
+    icon: "/images/icon-10.svg",
+    title: "Negotiation Wizardry",
+    text: "Negotiating the best deal is an art, and our negotiation experts are masters of it.",
+  },
+  {
+    id: 4,
+    icon: "/images/icon-11.svg",
+    title: "Closing Success",
+    text: "A successful sale is not complete until the closing. We guide you through the intricate closing process.",
+  },
+];
+
+export const managementFeatuesItems = [
+  {
+    id: 1,
+    icon: "/images/icon-12.svg",
+    title: "Tenant Harmony",
+    text: "Our Tenant Management services ensure that your tenants have a smooth and reducing vacancies.",
+  },
+  {
+    id: 2,
+    icon: "/images/icon-13.svg",
+    title: "Maintenance Ease",
+    text: "Say goodbye to property maintenance headaches. We handle all aspects of property upkeep.",
+  },
+  {
+    id: 3,
+    icon: "/images/icon-14.svg",
+    title: "Financial Peace of Mind",
+    text: "Managing property finances can be complex. Our financial experts take care of rent collection",
+  },
+  {
+    id: 4,
+    icon: "/images/icon-15.svg",
+    title: "Legal Guardian",
+    text: "Stay compliant with property laws and regulations effortlessly.",
+  },
+];
+
+export const investmentFeaturesItems = [
+  {
+    id: 1,
+    icon: "/images/icon-12.svg",
+    title: "Market Insight",
+    text: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions",
+  },
+  {
+    id: 2,
+    icon: "/images/icon-12.svg",
+    title: "ROI Assessment",
+    text: "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments",
+  },
+  {
+    id: 3,
+    icon: "/images/icon-12.svg",
+    title: "Customized Strategies",
+    text: "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs",
+  },
+  {
+    id: 4,
+    icon: "/images/icon-12.svg",
+    title: "Diversification Mastery",
+    text: "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations",
+  },
+];
+
+// ***********************
+//      Contact page
+// ***********************
+
+export const contactFormItems = [
+  {
+    id: 1,
+    inputs: [
+      {
+        id: 1,
+        label: "First Name",
+        type: "text",
+        placeholder: "Enter First Name",
+      },
+      {
+        id: 2,
+        label: "Last Name",
+        type: "text",
+        placeholder: "Enter Last Name",
+      },
+      {
+        id: 3,
+        label: "Email",
+        type: "email",
+        placeholder: "Enter your Email",
+      },
+      {
+        id: 4,
+        label: "Phone",
+        type: "number",
+        placeholder: "Enter Phone Number",
+      },
+    ],
+  },
+  {
+    id: 2,
+    selects: [
+      {
+        id: 1,
+        label: "Inquiry Type",
+        placeholder: "Select Inquiry Type",
+        options: ["New York", "Chicago", "Los Angeles", "Miami"],
+      },
+      {
+        id: 2,
+        label: "How Did You Hear About Us?",
+        placeholder: "Select",
+        options: ["Villa", "Apartment", "House", "Loft", "Cabin"],
+      },
+    ],
+  },
+];
+
+export const ourOfficeItems = [
+  {
+    id: 1,
+    tabList: [
+      {
+        label: "All",
+      },
+      {
+        label: "Regional",
+      },
+      {
+        label: "International",
+      },
+    ],
+    tabPanels: [
+      {
+        id: 1,
+        type: "international",
+        subtitle: "International Headquarters",
+        title: "123 Estatein Plaza, City Center, Metropolis",
+        text: "Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.",
+        contactInfo: [
+          {
+            icon: RiMailLine,
+            label: "info@estatein.com",
+          },
+          {
+            icon: RiPhoneFill,
+            label: "+1 (123) 456-7890",
+          },
+          {
+            icon: RiMapFill,
+            label: "Metropolis",
+          },
+        ],
+      },
+      {
+        id: 2,
+        type: "regional",
+        subtitle: "Regional Offices",
+        title: "456 Urban Avenue, Downtown District, Metropolis",
+        text: "Estatein's presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.",
+        contactInfo: [
+          {
+            icon: RiMailLine,
+            label: "info@restatein.com",
+          },
+          {
+            icon: RiPhoneFill,
+            label: "+1 (123) 628-7890",
+          },
+          {
+            icon: RiMapFill,
+            label: "Metropolis",
+          },
+        ],
       },
     ],
   },

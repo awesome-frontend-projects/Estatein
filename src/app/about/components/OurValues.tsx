@@ -1,6 +1,6 @@
 "use client";
 import Title from "@/components/Title";
-import { valuesItems } from "@/data/data";
+import { aboutValues } from "@/data/data";
 import Image from "next/image";
 import React from "react";
 //import motion
@@ -25,7 +25,7 @@ export default function OurValues() {
 
         {/* Card wrapper */}
         <div className="grid gap-8 md:grid-cols-2">
-          {valuesItems.map((item) => (
+          {aboutValues.map((item) => (
             // Card
             <motion.div
               variants={fadeInUp}

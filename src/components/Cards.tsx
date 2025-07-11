@@ -1,5 +1,5 @@
 "use client";
-import { heroBottomItems } from "@/data/data";
+import { CardsItems } from "@/data/data";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import Image from "next/image";
 import React from "react";
@@ -8,7 +8,7 @@ import React from "react";
 import { motion } from "motion/react";
 import * as variants from "@/motion/animation";
 
-export default function HeroBottom() {
+export default function Cards() {
   return (
     <section>
       <motion.div
@@ -18,7 +18,7 @@ export default function HeroBottom() {
         viewport={{ once: true }}
         className="container grid grid-cols-2 gap-2.5 mt-10 lg:grid-cols-4"
       >
-        {heroBottomItems.map((item) => (
+        {CardsItems.map((item) => (
           // Card
           <motion.div
             variants={variants.fadeInUp}
