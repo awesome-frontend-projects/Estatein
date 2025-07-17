@@ -32,7 +32,6 @@ export default function Testimonials() {
         <Title
           title="What Our Clients Say"
           text="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
-          link="View All Testimonials"
         />
 
         {/* Card wrapper */}

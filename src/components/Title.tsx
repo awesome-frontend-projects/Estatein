@@ -11,9 +11,10 @@ interface titleProps {
   title: string;
   text: string;
   link?: string;
+  url?: string;
 }
 
-export default function Title({ title, text, link }: titleProps) {
+export default function Title({ title, text, link, url }: titleProps) {
   return (
     <div className="flex justify-between items-center flex-wrap gap-3">
       <motion.div variants={fadeInUp}>
@@ -31,7 +32,7 @@ export default function Title({ title, text, link }: titleProps) {
 
       <motion.div variants={fadeInUp}>
         {link && (
-          <Link href="#" className="primary-btn">
+          <Link href={`/${url}`} className="primary-btn">
             {link}
           </Link>
         )}

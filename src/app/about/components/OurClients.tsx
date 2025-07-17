@@ -69,7 +69,7 @@ export default function OurClients() {
                     <p>{item.time}</p>
                     <h4>{item.company}</h4>
                   </div>
-                  <Button label="Visit Website" classes="primary-btn" />
+                  <Button label="Visit Website" classes="primary-btn" url="#" />
                 </div>
 
                 {/* wrapper */}

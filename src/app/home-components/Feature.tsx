@@ -29,6 +29,7 @@ export default function Feature() {
           title="Featured Properties"
           text='Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'
           link="View All Properties"
+          url="properties"
         />
 
         {/* Card wrapper */}

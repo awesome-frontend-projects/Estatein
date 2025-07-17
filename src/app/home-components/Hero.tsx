@@ -8,6 +8,7 @@ import { heroStats } from "@/data/data";
 //motion
 import { motion } from "motion/react";
 import * as variants from "@/motion/animation";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -40,8 +41,12 @@ export default function Hero() {
             variants={variants.fadeInUp}
             className="flex flex-wrap gap-3.5"
           >
-            <Button label="Learn More" classes="primary-btn" />
-            <Button label="Browse Properties" classes="secondary-btn" />
+            <Link href={"/about"} className="primary-btn">
+              Learn More
+            </Link>
+            <Link href={"/properties"} className="secondary-btn">
+              Browse Properties
+            </Link>
           </motion.div>
 
           {/* Stats wrapper */}

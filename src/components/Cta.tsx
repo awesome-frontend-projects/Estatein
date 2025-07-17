@@ -33,6 +33,7 @@ export default function Cta() {
         <Button
           label="Explore Properties"
           classes="secondary-btn max-w-max ml-auto"
+          url="properties"
         />
       </div>
 
