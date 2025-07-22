@@ -16,7 +16,6 @@ export default function Footer() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
         className="container grid gap-8 lg:gap-24"
       >
         {/* footer top */}

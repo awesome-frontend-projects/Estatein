@@ -1,5 +1,5 @@
 {
-  "name": "digital-agency-website",
+  "name": "Estatein-realestate-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,13 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-select": "^2.2.5",
     "@remixicon/react": "^4.6.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.525.0",
     "motion": "^12.23.0",
     "next": "15.3.5",
     "nextjs-toploader": "^3.8.16",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^11.2.10"
+    "react-tabs": "^6.1.0",
+    "swiper": "^11.2.10",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -23,6 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   }
 }

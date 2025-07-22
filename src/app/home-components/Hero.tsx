@@ -8,6 +8,7 @@ import { heroStats } from "@/data/data";
 //motion
 import { motion } from "motion/react";
 import * as variants from "@/motion/animation";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -40,8 +41,20 @@ export default function Hero() {
             variants={variants.fadeInUp}
             className="flex flex-wrap gap-3.5"
           >
-            <Button label="Learn More" classes="primary-btn" />
-            <Button label="Browse Properties" classes="secondary-btn" />
+            <Link
+              href={"/about"}
+              className="primary-btn"
+              aria-label="learn more about us"
+            >
+              Learn More
+            </Link>
+            <Link
+              href={"/properties"}
+              className="secondary-btn"
+              aria-label="search properties"
+            >
+              Browse Properties
+            </Link>
           </motion.div>
 
           {/* Stats wrapper */}
@@ -55,10 +68,10 @@ export default function Hero() {
                 }`}
                 key={item.id}
               >
-                <h3 className="text-3xl font-semibold text-white">
+                <h2 className="text-3xl font-semibold text-white">
                   {item.value}
                   {item.id === 2 ? "k" : ""} +
-                </h3>
+                </h2>
                 <p>{item.label}</p>
               </motion.div>
             ))}
@@ -83,8 +96,11 @@ export default function Hero() {
                 alt="shape"
                 className="text-shape"
               />
-              <button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-grey-10 ring ring-grey-15  flex items-center justify-center rounded-full hover:text-white transition-colors">
-                <RiArrowRightUpLongLine size={24} />
+              <button
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-grey-10 ring ring-grey-15  flex items-center justify-center rounded-full hover:text-white transition-colors"
+                aria-label="Discover your dream property"
+              >
+                <RiArrowRightUpLongLine size={24} aria-hidden="true" />
               </button>
             </div>
           </div>

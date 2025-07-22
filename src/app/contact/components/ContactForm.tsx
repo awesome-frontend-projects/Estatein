@@ -1,8 +1,8 @@
 "use client";
 import Title from "@/components/Title";
-import React from "react";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { contactFormItems } from "@/data/data";
+import React from "react";
 import {
   Select,
   SelectContent,
@@ -10,13 +10,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { formItems } from "@/data/data";
 
 //motion
 import { motion } from "motion/react";
 import { fadeIn, staggerContainer } from "@/motion/animation";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
   return (
     <section className="section">
       <motion.div
@@ -28,17 +31,18 @@ export default function ContactForm() {
       >
         {/* Title */}
         <Title
-          title="Let's Make it Happen"
-          text="Ready to take the first step toward your dream property? Fill out the form below, and our real estate wizards will work their magic to find your perfect match. Don't wait; let's embark on this exciting journey together."
+          title="Let's Connect"
+          text="We're excited to connect with you and learn more about your real estate goals. Use the form below to get in touch with Estatein. Whether you're a prospective client, partner, or simply curious about our services, we're here to answer your questions and provide the assistance you need."
         />
 
         {/* form */}
         <motion.form
+          onSubmit={handleFormSubmit}
           variants={fadeIn}
           className="border border-grey-15 rounded-[12px] p-5 lg:p-10  mt-8 md:mt-12"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-            {formItems.map((group) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            {contactFormItems.map((group) => (
               <React.Fragment key={group.id}>
                 {/* Map Inputs */}
                 {group.inputs?.map((input) => (
@@ -92,24 +96,8 @@ export default function ContactForm() {
               </React.Fragment>
             ))}
 
-            {/* opation */}
-            <div className="lg:col-span-2 flex flex-col gap-2">
-              <label htmlFor="">Preferred Contact Method</label>
-              <div className="flex gap-6">
-                <Input
-                  type="email"
-                  placeholder="Enter Your Email"
-                  className="h-[52px] w-full !rounded-[6px]"
-                />
-                <Input
-                  type="number"
-                  placeholder="Enter Your Number"
-                  className="h-[52px] w-full !rounded-[6px]"
-                />
-              </div>
-            </div>
             {/* Text area */}
-            <div className="lg:col-span-4 md:col-span-2 flex flex-col gap-2">
+            <div className="lg:col-span-3 md:col-span-2 flex flex-col gap-2">
               <label htmlFor="textarea">Message</label>
               <Textarea
                 placeholder="Enter your Message here.."

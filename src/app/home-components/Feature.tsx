@@ -29,6 +29,7 @@ export default function Feature() {
           title="Featured Properties"
           text='Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.'
           link="View All Properties"
+          url="properties"
         />
 
         {/* Card wrapper */}
@@ -72,7 +73,7 @@ export default function Feature() {
 
                 {/* Card content */}
                 <div className="mt-3.5">
-                  <h4>{item.title}</h4>
+                  <h3>{item.title}</h3>
                   <p>{item.text}</p>
                   <div className="flex items-center flex-wrap gap-1.5 my-5">
                     {item.icons.map((item, index) => (
@@ -88,12 +89,12 @@ export default function Feature() {
                             height={20}
                           />
                         </span>
-                        <p>{item.label}</p>
+                        <p className="text-sm">{item.label}</p>
                       </div>
                     ))}
                   </div>
                   {/* Price */}
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between flex-wrap gap-6">
                     <p className="font-semibold grid gap-1">
                       Price{" "}
                       <span className="text-white text-lg">${item.price}</span>

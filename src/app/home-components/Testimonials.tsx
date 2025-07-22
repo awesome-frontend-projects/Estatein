@@ -32,7 +32,6 @@ export default function Testimonials() {
         <Title
           title="What Our Clients Say"
           text="Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs."
-          link="View All Testimonials"
         />
 
         {/* Card wrapper */}
@@ -87,8 +86,8 @@ export default function Testimonials() {
                 </div>
                 {/* Card content */}
                 <div className="my-4">
-                  <h4>{item.title}</h4>
-                  <p>{item.text}</p>
+                  <h3>{item.title}</h3>
+                  <p className="text-base">{item.text}</p>
                 </div>
                 {/* author info */}
                 <div className="">

@@ -9,12 +9,14 @@ import { fadeInUp } from "@/motion/animation";
 interface buttonProps {
   label: string;
   classes: string;
+  link?: string;
+  url?: string;
 }
 
-export default function Button({ label, classes }: buttonProps) {
+export default function Button({ label, classes, url }: buttonProps) {
   return (
     <motion.div variants={fadeInUp}>
-      <Link href="#" className={classes}>
+      <Link href={`/${url}`} className={classes} aria-label={label}>
         {label}
       </Link>
     </motion.div>

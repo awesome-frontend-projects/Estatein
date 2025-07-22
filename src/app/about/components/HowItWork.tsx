@@ -36,7 +36,7 @@ export default function HowItWork() {
                 {item.step}
               </p>
               <div className="pt-4">
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
                 <p className="mt-3.5">{item.text}</p>
               </div>
             </motion.div>

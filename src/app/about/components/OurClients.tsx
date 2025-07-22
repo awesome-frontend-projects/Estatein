@@ -67,9 +67,9 @@ export default function OurClients() {
                 <div className="flex items-center gap-6 justify-between flex-wrap">
                   <div className="">
                     <p>{item.time}</p>
-                    <h4>{item.company}</h4>
+                    <h3>{item.company}</h3>
                   </div>
-                  <Button label="Visit Website" classes="primary-btn" />
+                  <Button label="Visit Website" classes="primary-btn" url="#" />
                 </div>
 
                 {/* wrapper */}
@@ -82,17 +82,17 @@ export default function OurClients() {
                         </p>
                         <p>{item.subtitle}</p>
                       </div>
-                      <h5 className="text-lg font-semibold text-white mt-1.5">
+                      <h4 className="text-lg font-semibold text-white mt-1.5">
                         {item.title}
-                      </h5>
+                      </h4>
                     </div>
                   ))}
                 </div>
 
                 {/* Description */}
-                <div className="border border-grey-15 rounded-lg p-3">
+                <div className="border border-grey-15 space-y-2 rounded-lg p-3">
                   <p>{item.reason}</p>
-                  <p className="mt-2.5">{item.text}</p>
+                  <p className="text-sm">{item.text}</p>
                 </div>
               </motion.div>
             </SwiperSlide>
