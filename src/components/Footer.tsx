@@ -39,7 +39,10 @@ export default function Footer() {
                 type="email"
                 className="w-full h-full p-5 indent-8 outline-none focus:border-purple-700 border border-grey-15 rounded-lg"
               />
-              <button className="absolute top-1/2 right-4 -translate-y-1/2 hover:text-purple-600 transition-colors">
+              <button
+                className="absolute top-1/2 right-4 -translate-y-1/2 hover:text-purple-600 transition-colors"
+                aria-label="submit input"
+              >
                 <RiSendPlaneFill />
               </button>
             </div>
