@@ -42,7 +42,7 @@ export default function Hero() {
             className="flex flex-wrap gap-3.5"
           >
             <Link
-              href={"/about"}
+              href={"#"}
               className="primary-btn"
               aria-label="learn more about us"
             >
