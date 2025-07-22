@@ -41,10 +41,18 @@ export default function Hero() {
             variants={variants.fadeInUp}
             className="flex flex-wrap gap-3.5"
           >
-            <Link href={"/about"} className="primary-btn">
+            <Link
+              href={"/about"}
+              className="primary-btn"
+              aria-label="learn more about us"
+            >
               Learn More
             </Link>
-            <Link href={"/properties"} className="secondary-btn">
+            <Link
+              href={"/properties"}
+              className="secondary-btn"
+              aria-label="search properties"
+            >
               Browse Properties
             </Link>
           </motion.div>
