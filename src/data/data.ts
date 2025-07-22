@@ -324,15 +324,19 @@ export const footerItems = [
 export const socialIcons = [
   {
     icon: RiFacebookFill,
+    label: "Facebook",
   },
   {
     icon: RiLinkedinFill,
+    label: "Linkedin",
   },
   {
     icon: RiTwitterFill,
+    label: "Twitter",
   },
   {
     icon: RiYoutubeFill,
+    label: "Youtube",
   },
 ];
 
