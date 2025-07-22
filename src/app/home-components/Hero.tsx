@@ -100,7 +100,7 @@ export default function Hero() {
                 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-grey-10 ring ring-grey-15  flex items-center justify-center rounded-full hover:text-white transition-colors"
                 aria-label="Discover your dream property"
               >
-                <RiArrowRightUpLongLine size={24} />
+                <RiArrowRightUpLongLine size={24} aria-hidden="true" />
               </button>
             </div>
           </div>
