@@ -48,6 +48,7 @@ export default function Header() {
                     pathname === item.href ? "text-white" : ""
                   }`}
                   onClick={handleClick}
+                  aria-label={item.label}
                 >
                   {item.label}
                 </Link>
