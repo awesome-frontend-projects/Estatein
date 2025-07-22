@@ -149,7 +149,7 @@
     @apply px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1130px] 2xl:max-w-[1340px];
   }
   p {
-    @apply text-sm sm:text-base md:text-lg;
+    @apply text-sm sm:text-base xl:text-lg;
   }
   button {
     @apply cursor-pointer;
