@@ -81,6 +81,7 @@ export default function Footer() {
                 href="#"
                 key={index}
                 className="w-12 h-12 bg-grey-10 flex items-center justify-center rounded-full hover:bg-grey-20 transition-colors"
+                aria-label={item.label}
               >
                 {<item.icon />}
               </a>
