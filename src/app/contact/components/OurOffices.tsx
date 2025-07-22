@@ -81,7 +81,7 @@ export default function OurOffices() {
                         >
                           <div className="space-y-2">
                             <p className="">{panel.subtitle}</p>
-                            <h4 className="">{panel.title}</h4>
+                            <h3 className="">{panel.title}</h3>
                             <p className="">{panel.text}</p>
                           </div>
 
