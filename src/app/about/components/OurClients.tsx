@@ -67,7 +67,7 @@ export default function OurClients() {
                 <div className="flex items-center gap-6 justify-between flex-wrap">
                   <div className="">
                     <p>{item.time}</p>
-                    <h4>{item.company}</h4>
+                    <h3>{item.company}</h3>
                   </div>
                   <Button label="Visit Website" classes="primary-btn" url="#" />
                 </div>
@@ -82,9 +82,9 @@ export default function OurClients() {
                         </p>
                         <p>{item.subtitle}</p>
                       </div>
-                      <h5 className="text-lg font-semibold text-white mt-1.5">
+                      <h4 className="text-lg font-semibold text-white mt-1.5">
                         {item.title}
-                      </h5>
+                      </h4>
                     </div>
                   ))}
                 </div>

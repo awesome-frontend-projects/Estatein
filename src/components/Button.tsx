@@ -16,7 +16,7 @@ interface buttonProps {
 export default function Button({ label, classes, url }: buttonProps) {
   return (
     <motion.div variants={fadeInUp}>
-      <Link href={`/${url}`} className={classes}>
+      <Link href={`/${url}`} className={classes} aria-label={label}>
         {label}
       </Link>
     </motion.div>

@@ -211,7 +211,7 @@ export default function SearchFilters() {
 
                 {/* Card content */}
                 <div className="mt-3.5">
-                  <h4>{item.title}</h4>
+                  <h3>{item.title}</h3>
                   <p>{item.text}</p>
                   <div className="flex items-center flex-wrap gap-1.5 my-5">
                     {item.icons.map((iconItem, index) => (

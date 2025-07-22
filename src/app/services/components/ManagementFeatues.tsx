@@ -44,7 +44,7 @@ export default function ManagementFeatues() {
                     height={60}
                   />
                 </div>
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
               </div>
               {/* Content */}
               <p>{item.text}</p>
@@ -56,7 +56,7 @@ export default function ManagementFeatues() {
           >
             {/* card header */}
             <div className="flex justify-between items-center mb-5 flex-wrap gap-5">
-              <h4>Experience Effortless Property Management</h4>
+              <h3>Experience Effortless Property Management</h3>
               <Button label="Learn More" classes="primary-btn" />
             </div>
             {/* Content */}

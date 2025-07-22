@@ -37,7 +37,7 @@ export default function OurValues() {
                 <div className="mb-3.5">
                   <Image src={item.icon} alt="icon" width={60} height={60} />
                 </div>
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
               </div>
               {/* text */}
               <p>{item.text}</p>

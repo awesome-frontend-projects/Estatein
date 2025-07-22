@@ -49,7 +49,7 @@ export default function OurTeam() {
 
               {/* info */}
               <div className="text-center">
-                <h4>{item.name}</h4>
+                <h3>{item.name}</h3>
                 <p>{item.role}</p>
               </div>
 

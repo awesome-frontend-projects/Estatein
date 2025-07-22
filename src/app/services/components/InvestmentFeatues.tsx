@@ -30,7 +30,7 @@ export default function InvestmentFeatues() {
             variants={fadeInUp}
             className="relative lg:col-span-2 border border-grey-15 rounded-lg p-4 lg:p-6 overflow-hidden bg-grey-10/50 grid gap-3"
           >
-            <h4>Unlock Your Investment Potential</h4>
+            <h3>Unlock Your Investment Potential</h3>
             {/* Content */}
             <p>
               Explore our Property Management Service categories and let us
@@ -69,7 +69,7 @@ export default function InvestmentFeatues() {
                     height={60}
                   />
                 </div>
-                <h4>{item.title}</h4>
+                <h3>{item.title}</h3>
               </div>
               {/* Content */}
               <p>{item.text}</p>

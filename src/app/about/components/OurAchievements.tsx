@@ -32,7 +32,7 @@ export default function OurAchievements() {
               key={item.id}
             >
               {/* title */}
-              <h4>{item.title}</h4>
+              <h3>{item.title}</h3>
               <p className="mt-4">{item.text}</p>
             </motion.div>
           ))}
