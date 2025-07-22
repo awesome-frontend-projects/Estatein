@@ -72,7 +72,7 @@ export default function Header() {
             <li key={item.id}>
               <Link
                 href={item.href}
-                className={`hover:text-white transition-colors text-lg ${
+                className={`hover:text-white transition-colors xl:text-lg ${
                   pathname === item.href ? "text-white" : ""
                 }`}
               >
