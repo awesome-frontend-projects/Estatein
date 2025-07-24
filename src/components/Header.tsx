@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <header className="w-full border border-grey-15 bg-grey-10">
       {/* Top bar */}
-      <div className="bg-grey-15 text-center flex items-center gap-2 justify-center flex-wrap py-4">
+      <div className="bg-grey-15 text-center flex items-center gap-2 justify-center flex-wrap py-2.5">
         <p>✨Discover Your Dream Property with Estatein</p>
         <Link href="#" className="hover:underline text-sm sm:text-base">
           Learn More

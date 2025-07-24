@@ -146,10 +146,10 @@
 
 @layer utilities {
   .container {
-    @apply px-4 mx-auto sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1130px] 2xl:max-w-[1340px];
+    @apply px-4 mx-auto lg:px-8 xl:px-14 2xl:max-w-screen-xl;
   }
   p {
-    @apply text-sm sm:text-base xl:text-lg;
+    @apply text-sm sm:text-base 2xl:text-lg;
   }
   button {
     @apply cursor-pointer;
